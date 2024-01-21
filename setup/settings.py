@@ -40,7 +40,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'forum.apps.GaleriaConfig',
+    'forum.apps.ForumConfig',
 ]
 
 MIDDLEWARE = [
