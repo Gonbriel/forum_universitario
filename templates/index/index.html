@@ -1,34 +1,28 @@
 {% load static %}
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'styles/index.css' %}">
     <title>Jobant</title>
 </head>
 <body>
     <header>
-        <img src="{% static 'assets/logo/logo.png' %}" alt="Logo da Jobant">
+        <img class="logo" src="{% static 'assets/logo/logo.png' %}" alt="logo">
         <nav>
-            <a>Fóruns</a>
-            <a>Contatos</a>
-            <a>Sobre</a>
+            <ul class="nav_links">
+                <li><a href="#">Serviços</a></li>
+                <li><a href="#">Sobre</a></li>
+                <li><a href="#">Contato</a></li>
+            </ul>
         </nav>
+        <a class="ctt" href="{% url 'login_cadastro' %}"><button>Login</button></a>
     </header>
-    <main>
-        <section>
-            <div>
-                <h1>Jobant</h1>
-                <h2>Na trilha do sucesso, a equipe é a bússola que nos guia.</h2>
-            </div>
-            <p>Conectando mentes criativas e habilidades diversas - transformando ideias individuais em projetos colaborativos.</p>
-            <p>No nosso espaço, estudantes universitários encontram parceiros além das fronteiras de suas disciplinas,</p>
-            <p>criando sinergias inovadoras para impulsionar ideias.</p>
-        </section>
-    </main>
-    
-    <footer>
-        
-    </footer>
+
+    <div class="title">
+        <p>Job<ant>ant</ant></p>
+      </div>
 </body>
 </html>
