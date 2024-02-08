@@ -1,7 +1,6 @@
 from django.urls import path
-from forum.views import index, login_cadastro
+from forum.views import index
 
 urlpatterns = [
     path('', index, name='index'),
-    path('login_cadastro/', login_cadastro, name='login_cadastro'),
 ]
