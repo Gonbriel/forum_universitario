@@ -41,23 +41,26 @@
 									<div class="center-wrap">
 										<div class="section text-center">
 											<h4 class="mb-3 pb-3" style="color: #1f2029;">Cadastro</h4>
-											<div class="form-group">
-												<input type="text" class="form-style" placeholder="Nome">
-												<i class="input-icon uil uil-user"></i>
-											</div>	
-											<div class="form-group mt-2">
-												<input type="text" class="form-style" placeholder="Matrícula">
-												<i class="input-icon uil uil-phone"></i>
-											</div>	
-                      <div class="form-group mt-2">
-												<input type="email" class="form-style" placeholder="Email">
-												<i class="input-icon uil uil-at"></i>
-											</div>
-											<div class="form-group mt-2">
-												<input type="password" class="form-style" placeholder="Senha">
-												<i class="input-icon uil uil-lock-alt"></i>
-											</div>
-											<a href="#" class="btn mt-4">Cadastrar</a>
+											<form action="{% url 'login_cadastro' %}" method="POST">
+												{% csrf_token %}
+												<div class="form-group">
+													<input type="text" class="form-style" placeholder="Nome" name="nome">
+													<i class="input-icon uil uil-user"></i>
+												</div>	
+												<div class="form-group mt-2">
+													<input type="text" class="form-style" placeholder="Matrícula" name="matricula">
+													<i class="input-icon uil uil-phone"></i>
+												</div>	
+												  <div class="form-group mt-2">
+													<input type="email" class="form-style" placeholder="Email" name="email_cadastro">
+													<i class="input-icon uil uil-at"></i>
+												</div>
+												<div class="form-group mt-2">
+													<input type="password" class="form-style" placeholder="Senha" name="senha_cadastro">
+													<i class="input-icon uil uil-lock-alt"></i>
+												</div>
+												<a href="#" class="btn mt-4">Cadastrar</a>
+											</form>
 				      					</div>
 			      					</div>
 			      				</div>
